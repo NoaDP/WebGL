@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="js/three.min.js"></script>
+    <script src="js/OrbitControls.js"></script>
+    <script src="js/MTLLoader.js"></script>
+    <script src="js/OBJLoader.js"></script>
+    <script src="js/controls.js"></script>
+    <style>
+        @font-face { font-family: RoundGeo; src: url('assets/Round Geometric.otf'); }
+
+        body{
+            font-family: RoundGeo;
+        }
+        #controlPanel{
+            //visibility: hidden;
+            border: 1px solid gray;
+            background-color:rgba(0,0,0,0.3);
+            position: absolute;
+            top:20px;
+            left:20px;
+            z-index: 5;
+        }
+        p {
+            font-size: 30px;
+            color:white;
+            margin-left:2%;
+        }
+
+
+        #startMenu h3{
+            position:absolute;
+            display: block;
+            top:20vh;
+            left: 37vw;
+            font-size: 6em;
+            color:#00b2ee;
+        }
+        #start{
+            position:absolute;
+            display: block;
+            top:50vh;
+            left: 40vw;
+            width: 20vw;
+            height: 15vh;
+            border-radius: 10%;
+
+        }
+        #EndTitle{
+            color:white;
+        }
+        #EndTitle{
+            position:absolute;
+            display: block;
+            top:20vh;
+            left: 37vw;
+            font-size: 6em;
+        }
+        #EndButton{
+            position:absolute;
+            display: block;
+            top:50vh;
+            left: 40vw;
+            width: 20vw;
+            height: 15vh;
+            border-radius: 10%;
+        }
+        #EndImage{
+            margin-top:-1000px;
+        }
+
+    </style>
+
+</head>
+
+<body style="margin: 0; padding:0">
+<div id="startMenu">
+
+    <img src="assets/d77231459e9c1c2b377059a06eabdefc.jpg" id="startPage">
+    <h3 id="GameTitle">GEORUN</h3>
+    <button id="start" type="button">Start Game</button>
+</div>
+<div id="controlPanel">
+    <p id="Elapsed">Elapsed Time:</p>
+    <p id="timer"></p>
+</div>
+
+<script src="js/scene.js"></script>
+
+
+</body>
+</html>
